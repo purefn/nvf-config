@@ -11,7 +11,6 @@ in {
 
     spellcheck = {
       enable = true;
-      programmingWordlist.enable = true;
     };
 
     lsp = {
