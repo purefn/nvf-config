@@ -101,7 +101,10 @@ in {
 
     minimap = {
       minimap-vim.enable = false;
-      codewindow.enable = true; # lighter, faster, and uses lua for configuration
+      # codewindow.nvim's highlight.lua requires nvim-treesitter.ts_utils,
+      # which the upstream rewrite (nixpkgs master, 0.10.0-unstable-2026-04-03)
+      # no longer ships. Disable until codewindow drops the dependency.
+      codewindow.enable = false; # lighter, faster, and uses lua for configuration
     };
 
     dashboard = {
