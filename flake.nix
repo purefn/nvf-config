@@ -2,7 +2,8 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nvf = {
-      url = "github:purefn/nvf/haskell-tools-optional-cmd";
+      # url = "github:purefn/nvf/haskell-tools-optional-cmd";
+      url = "github:NotAShelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
